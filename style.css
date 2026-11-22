@@ -22,8 +22,20 @@ h1 {
     color: navy;
     color: var(--title);
 }
-img {
+.profile-avatar {
+    display: block;
+    width: clamp(120px, 25vw, 200px);
+    height: clamp(120px, 25vw, 200px);
     border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+@media (max-width: 480px) {
+    .profile-avatar {
+        width: 128px;
+        height: 128px;
+    }
 }
 ul {
     display: flex;
