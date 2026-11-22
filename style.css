@@ -1,12 +1,26 @@
+root {
+    --bg: #f5f7fb;
+    --text: #111;
+    --card: white;  
+    --title: navy;
+}
+body.dark {
+    --bg: #0f172a;
+    --text: #f1f5f9;
+    --card: #1e293b;
+    --title: #93c5fd;
+}
 body {
     font-family: sans-serif;
     background: #f5f7fb;
     max-width: 600px;
     margin: 0 auto;
     padding: 16px;
+    background: var(--bg);
 }
 h1 {
     color: navy;
+    color: var(--title);
 }
 img {
     border-radius: 50%;
@@ -33,6 +47,7 @@ button {
     border-radius: 12px;
     box-shadow: 0 2px 8px #002;
     transition: transform 0.25s ease, box-shadow 0.25s ease; /* hover */
+    background: var(--card);
 }
 .card:hover {
     transform: translateY(-6px);
