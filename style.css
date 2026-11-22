@@ -1,0 +1,23 @@
+body {
+    font-family: sans-serif;
+    background: #f5f7fb;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 16px;
+}
+h1 {
+    color: navy;
+}
+img {
+    border-radius: 50%;
+}
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+button {
+    background:  #000080;
+    color: white;
+    border-radius: 8px;
+}
