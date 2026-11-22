@@ -12,11 +12,23 @@ body.dark {
 }
 body {
     font-family: sans-serif;
-    background: #f5f7fb;
     max-width: 600px;
     margin: 0 auto;
     padding: 16px;
     background: var(--bg);
+    color: var(--text);
+}
+h1,
+h2,
+h3 {
+    color: var(--title);
+}
+p,
+li,
+span,
+.card,
+.tool-group {
+    color: var(--text);
 }
 h1 {
     color: navy;
@@ -131,4 +143,27 @@ button {
 .card:hover {
     transform: translateY(-6px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12); /* hover */
+}
+
+body.dark {
+    color: var(--text);
+}
+body.dark p,
+body.dark li,
+body.dark span,
+body.dark a,
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark .card,
+body.dark .card p,
+body.dark .card h3,
+body.dark .tool,
+body.dark .tool-group,
+body.dark .tool-group h3,
+body.dark .intro {
+    color: var(--text);
+}
+body.dark .intro span {
+    color: var(--title);
 }
